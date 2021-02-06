@@ -7,7 +7,7 @@ from yandex_pages.yandex_main import YandexMain
 
 @allure.parent_suite("Yandex UI")
 class TestImagesFailed:
-    """Test shows example of error"""
+    """Test shows example of error """
 
     @allure.suite("Images")
     @allure.sub_suite('Failed images')
