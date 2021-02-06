@@ -1,0 +1,2 @@
+# YandexTest
+Example of tests
