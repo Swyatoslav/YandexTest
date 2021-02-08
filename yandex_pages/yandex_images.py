@@ -75,6 +75,7 @@ class YandexImage:
         """
 
         self.previous_image_btn.click()
+        delay(1, 'Waiting for action')
         self.current_img_elm.should_be_attribute('src', initial_image_src)
 
 

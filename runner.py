@@ -18,7 +18,7 @@ if __name__ == '__main__':
     report_path = os.path.join(root, report_name)
 
     print('Start tests')
-    command = f'python -m pytest -n 4 {tests_folder} --alluredir {result_path}'
+    command = f'python -m pytest -n 3 {tests_folder} --alluredir {result_path}'
     print(command)
     os.system(command)
 
@@ -28,4 +28,4 @@ if __name__ == '__main__':
 
     print('Start allure server')
     sleep(1)
-    os.system(r'allure open -p {} {}'.format('22222', report_path))
+    os.system(r'allure open -p {} {}'.format('22223', report_path))
