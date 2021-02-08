@@ -7,9 +7,9 @@ class YandexMain:
 
     def __init__(self, test_case):
         self.test_case = test_case
-        self.search_inp         =   TextField(By.CSS_SELECTOR, '[id="text"]',                  'Search',             self.test_case)
-        self.images_btn         =   Button(   By.CSS_SELECTOR, '[data-id="images"]',           'Images',             self.test_case)
-        self.suggestions_popup  =   PopupList(By.CSS_SELECTOR, '.mini-suggest__popup-content', 'Search suggestions', self.test_case)
+        self.search_inp         =   TextField(      By.CSS_SELECTOR, '[id="text"]',                  'Search',             self.test_case)
+        self.images_btn         =   Button(         By.CSS_SELECTOR, '[data-id="images"]',           'Images',             self.test_case)
+        self.suggestions_popup  =   PopupListYandex(By.CSS_SELECTOR, '.mini-suggest__popup-content', 'Search suggestions', self.test_case)
 
     @allure.step('Open Yandex page')
     def open_site(self):
